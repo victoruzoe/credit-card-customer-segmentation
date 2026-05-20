@@ -365,18 +365,6 @@ scipy
 jupyter
 ```
 
-Your `requirements.txt` file should contain:
-
-```text
-pandas
-numpy
-matplotlib
-seaborn
-scikit-learn
-scipy
-jupyter
-```
-
 ---
 
 ## Future Improvements
