@@ -295,7 +295,8 @@ The project was built using:
 credit-card-customer-segmentation
 │
 ├── data
-│   └── Credit_card_dataset.csv
+│   ├── Credit_card_dataset.csv
+│   └── README.md
 │
 ├── notebooks
 │   └── credit_card_customer_segmentation.ipynb
