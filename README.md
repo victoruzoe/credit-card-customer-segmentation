@@ -208,19 +208,21 @@ These customers may require:
 
 ## Visualisations
 
-The project includes several visualisations to support the analysis and interpretation of the customer segments.
+The project includes several visualisations to support the analysis, clustering process, and interpretation of customer segments.
 
-### Missing Value Analysis
+---
 
-This visualisation shows the missing values present in the dataset before cleaning.
+### Feature Distributions
 
-![Missing Value Analysis](images/missing_value_analysis.png)
+This visualisation shows the distribution of the numerical features in the dataset. It helps identify skewed variables, extreme values, and differences in feature ranges before clustering.
+
+![Feature Distributions](images/feature_distributions.png)
 
 ---
 
 ### Correlation Heatmap
 
-The correlation heatmap shows relationships between the numerical features in the dataset.
+The correlation heatmap shows the relationships between numerical features in the dataset. This helps identify features that move together and provides a better understanding of customer financial behaviour.
 
 ![Correlation Heatmap](images/correlation_heatmap.png)
 
@@ -228,39 +230,31 @@ The correlation heatmap shows relationships between the numerical features in th
 
 ### Hierarchical Clustering Dendrogram
 
-The dendrogram was used to explore possible natural groupings in the dataset before applying K-Means clustering.
+The dendrogram was used to explore possible natural groupings in the dataset before applying K-Means clustering. A sample of the scaled dataset was used to keep the dendrogram readable.
 
 ![Hierarchical Clustering Dendrogram](images/dendrogram.png)
 
 ---
 
-### Elbow Method
+### Agglomerative Clustering Scatter Plot
 
-The elbow curve was used to compare different values of `k` and observe how inertia changes as the number of clusters increases.
+This scatter plot shows the results of agglomerative clustering using `PURCHASES` and `CREDIT_LIMIT` as visual reference features.
 
-![Elbow Method](images/elbow_curve.png)
-
----
-
-### Silhouette Score Comparison
-
-The silhouette score comparison was used to evaluate how well-separated the clusters were for different values of `k`.
-
-![Silhouette Score Comparison](images/silhouette_score_comparison.png)
+![Agglomerative Clustering Scatter Plot](images/agglomerative_clustering_scatter.png)
 
 ---
 
-### Davies-Bouldin Score Comparison
+### Elbow Method and Silhouette Score
 
-The Davies-Bouldin score was used as an additional clustering evaluation metric.
+This visualisation combines the elbow method and silhouette score comparison. It was used to compare different values of `k` and support the final choice of three clusters.
 
-![Davies-Bouldin Score Comparison](images/davies_bouldin_score_comparison.png)
+![Elbow Method and Silhouette Score](images/elbow_silhouette_comparison.png)
 
 ---
 
 ### PCA Cluster Visualisation
 
-PCA was used to reduce the scaled dataset into two components so that the final customer segments could be visualised in two dimensions.
+PCA was used to reduce the scaled dataset into two principal components so that the final customer segments could be visualised in two dimensions.
 
 ![PCA Cluster Visualisation](images/pca_cluster_visualisation.png)
 
@@ -268,7 +262,7 @@ PCA was used to reduce the scaled dataset into two components so that the final 
 
 ### Cluster Profile Comparison
 
-This visualisation compares the behavioural characteristics of the final customer segments.
+This chart compares the normalised average values of key features across the final customer segments. It supports the interpretation of the three customer groups.
 
 ![Cluster Profile Comparison](images/cluster_profile_comparison.png)
 
