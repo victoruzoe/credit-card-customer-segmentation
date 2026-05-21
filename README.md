@@ -236,14 +236,6 @@ The dendrogram was used to explore possible natural groupings in the dataset bef
 
 ---
 
-### Agglomerative Clustering Scatter Plot
-
-This scatter plot shows the results of agglomerative clustering using `PURCHASES` and `CREDIT_LIMIT` as visual reference features.
-
-![Agglomerative Clustering Scatter Plot](images/agglomerative_clustering_scatter.png)
-
----
-
 ### Elbow Method and Silhouette Score
 
 This visualisation combines the elbow method and silhouette score comparison. It was used to compare different values of `k` and support the final choice of three clusters.
@@ -289,19 +281,15 @@ The project was built using:
 credit-card-customer-segmentation
 │
 ├── data
-│   ├── Credit_card_dataset.csv
 │   └── README.md
 │
 ├── notebooks
 │   └── credit_card_customer_segmentation.ipynb
 │
 ├── images
-│   ├── missing_value_analysis.png
 │   ├── correlation_heatmap.png
 │   ├── dendrogram.png
-│   ├── elbow_curve.png
-│   ├── silhouette_score_comparison.png
-│   ├── davies_bouldin_score_comparison.png
+│   ├── elbow_silhouette_comparison.png
 │   ├── pca_cluster_visualisation.png
 │   └── cluster_profile_comparison.png
 │
